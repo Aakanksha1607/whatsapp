@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+
+    <style>
+     .container{
+        height:480px;
+        width: 350px;
+       align-items: center;
+        border: 5px solid;
+        border-radius: 35px;
+        border-top-color:rgb(6, 107, 6);
+        border-top-width:80px;
+        position: fixed;
+        overflow: scroll;
+        scrollbar-width: none;
+     }
+     .pic img{
+        width:60px;
+        border-radius: 50px;
+        position:fixed;
+        top:20px;
+        left: 50px;
+     }
+     .arrow{
+        position:fixed;
+        font-size:20px;
+        top: 40px;
+        left:20px;  
+     }
+     p{
+        font-size:medium;
+        position:fixed;
+        left: 115px;
+        top:28px;
+     }
+     .call{
+      position:fixed;
+      font-size:20px;
+      top:40px;
+      left:280px;
+     }
+     .video{
+      position:fixed;
+      font-size:20px;
+      top:40px;
+      left:310px;
+     }
+     .dots{
+      position:fixed;
+      font-size:20px;
+      top:40px;
+      left:345px;
+     }
+     .text{
+      position:relative;
+      top: 460px;
+      left:0px;
+     }
+     .bottom{
+      position:fixed;
+      top:300px;
+      left:60px;
+     }
+     .form-control{
+      width:300px;
+      position:absolute;
+      top:230px;
+      left:-40px;
+      height:30px;
+      border-radius: 30px;
+     }
+     .smile{
+      font-size:20px;
+      position:absolute;
+      top:530px;
+      left:20px;
+      background-color: yellow;
+     }
+     .link{
+      position:absolute;
+      font-size: 18px;
+      top:533px;
+     left:250px;
+     }
+     .rupee{
+      position:absolute;
+      font-size: 18px;
+      top:533px;
+      left:275px;
+     }
+     .cam{
+      position:absolute;
+      font-size: 18px;
+      top:532px;
+      left:293px;
+     }
+     .mic{
+     position:absolute;
+     font-size:25px;
+     top:528px;
+     color: rgb(47, 220, 255);
+     left:325px;
+     }
+     .footer{
+     position:fixed;
+     }
+     button{
+      position: relative;
+      border-radius: 4px;
+      bottom:10px;
+     }
+     .aapic{
+      width: 350px;
+      height:485px;
+     position:fixed;
+     top:85px;
+     background-size:cover;
+     border-bottom-left-radius: 30px;
+     border-bottom-right-radius: 30px; 
+     }
+     .s1{
+      border: 1px solid;
+      width: 70px;
+      height:20px;
+      font-size:14px;
+      text-align:center ;
+      border-radius:5px;
+      position:sticky;
+      top:20px;
+      left:140px;
+      margin-top: 20px;
+      background-color: rgb(151, 168, 239);
+      z-index:1;
+     }
+     .s2{
+      border: 1px solid;
+      width: 70px;
+      height:20px;
+      font-size:14px;
+      text-align:center ;
+      border-radius:5px;
+      background-color: rgb(151, 168, 239);
+      position:sticky;
+      top:20px;
+      margin-top: 100px;
+      left:140px;
+      z-index:1;
+     }
+     .s3{
+      border: 1px solid;
+      width: 70px;
+      height:20px;
+      font-size:14px;
+      text-align:center;
+      border-radius:5px;
+      background-color: rgb(151, 168, 239);
+      position: sticky;
+      top:20px;
+      margin-top: 200px;
+      left:140px;
+      z-index: 1;
+     }
+     .me1{
+        border: 1px solid;
+        width:140px ;
+        height: 25px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(11, 156, 57);
+        position: absolute;
+        top:70px;
+        right: 5px;
+     }
+     .aa1{
+      border: 1px solid;
+        width:100px ;
+        height: 25px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:120px;
+        left: 5px;
+     }
+     .me2{
+      border: 1px solid;
+        width:200px ;
+        height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(11, 156, 57);
+        position: absolute;
+        top:180px;
+        right: 5px;
+     }
+     .aa2{
+      border: 1px solid;
+        width:200px ;
+        height: 45px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:240px;
+        left: 5px;
+     }
+     .me3{
+      border: 1px solid;
+        width:200px ;
+        height: 40px;
+        text-align: center;
+      border-radius: 15px;
+      background-color: rgb(11, 156, 57);
+      position: absolute;
+      top:320px;
+      right: 5px;
+     }
+     .aa3{
+        border: 1px solid;
+        width:220px ;
+        height: 95px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:390px;
+        left: 5px;
+   
+     }
+     .me4{
+      border: 1px solid;
+        width:200px ;
+        height: 40px;
+        text-align: center;
+      border-radius: 15px;
+      background-color: rgb(11, 156, 57);
+      position: absolute;
+      top:520px;
+      right: 5px;
+     }
+     .aa4{
+      border: 1px solid;
+        width:200px ;
+        height: 25px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:590px;
+        left: 5px;
+     }
+     .me5{
+      border: 1px solid;
+        width:220px ;
+        height: 85px;
+        text-align: center;
+      border-radius: 15px;
+      background-color: rgb(11, 156, 57);
+      position: absolute;
+      top:650px;
+      right: 5px;
+     }
+     .aa5{
+      border: 1px solid;
+        width:200px ;
+        height: 25px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:770px;
+     left: 5px;
+     }
+     .aa6{
+      border: 1px solid;
+        width:200px ;
+        height: 25px;
+        border-radius: 15px;
+        background-color: rgb(225, 173, 214);
+        position: absolute;
+        top:810px;
+        left: 5px;
+
+     }
+ </style>
+</head>
+<body>
+    <!-- <h1>Whatsapp design</h1> -->
+       <div class="container">
+            <div class="pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsFF28_nvNLk6DZLiVZ9l4uT2ooZXPELSmwQ&s" >
+            <i class="fa-solid fa-arrow-left arrow"> </i>
+                <p><b>ALLU ARJUN </p>
+               <i class="fa-solid fa-video video"></i>
+               <i class="fa-solid fa-phone call" ></i>
+               <i class="fa-solid fa-ellipsis-vertical dots"></i>       
+            </div>
+            
+       <div class="chatbox">
+         <div>
+            <img class="aapic" src="https://i.pinimg.com/736x/fa/11/38/fa1138495d47260af2c799bb6b941838.jpg" alt="">
+         </div>
+            <div>
+               <div class="s1">25 JULY</div>
+               <div class="me1">Hii Bunny garu...</div>
+               <div class="aa1">Hello Andi</div>
+               <div class="s2">26 JULY</div>
+               <div class="me2">Im very biggest fan to you..</div>
+               <div class="aa2">Ohh Thankyou andi...mi abhimanam sallagunda!!</div>
+               <div class="s3">27 JULY</div>
+               <div class="me3">Pushpa-2 movie kosam waiting eagerly...</div>
+               <div class="aa3">Yahh...it will be very well directed and mi expectations ni minchi untundhi.Miru andaru wait cheyandi health issues valla delay aindhi...</div>
+               <div class="me4">Ayyoo...How is your health bunny garu..is it okk!</div>
+               <div class="aa4">yahh andi now all okk??</div>
+               <div class="me5">I watched the 2 songs from pushpa-2 which were released recently, they were awesome ,feels like goosebumpss</div>
+               <div class="aa5">Thankyou for your Love.&#128525</div>
+               <div class="aa6"></div>
+            </div>
+            </div>   
+        </div>
+          <div class="footer">
+          <div class="bottom">
+               <input type="text"  class="form-control"   placeholder="&emsp;&emsp;Message" >
+            </div>
+            <div> <i class="fa-regular fa-face-smile smile"></i></div>
+            <div>  <i class="fa-solid fa-paperclip link" ></i> </div>
+            <div>  <i class="fa-solid fa-indian-rupee-sign rupee" ></i></div>
+            <div><i class="fa-solid fa-camera cam"></i></div>
+           <div>  <i class="fa-solid fa-microphone mic"></i></div>
+           
+           
+          </div> 
+         </div>
+      </div>
+
+         
+</body>
+</html>
